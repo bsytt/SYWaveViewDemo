@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SYExamineHeadView: UIView {
+class SYHeadView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,21 +21,40 @@ class SYExamineHeadView: UIView {
     }
     
     func initSubview() {
-
+        self.addSubview(firstWare)
+        self.addSubview(secondWaves)
+        
+        self.addSubview(thirdWare)
+        self.addSubview(fouthWaves)
+        
     }
 
     lazy var firstWare: SYWaveView = {
-        let wave = SYWaveView(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height),isGradient:true)
+        let wave = SYWaveView(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: 130),isGradient:true)
         wave.alpha = 0.6
         return wave
     }()
     lazy var secondWaves: SYWaveView = {
-        let wave = SYWaveView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: self.frame.height),isGradient:true)
+        let wave = SYWaveView(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: 130),isGradient:true)
         wave.waveA = 13
         wave.waveSpeed = 0.06
         wave.alpha = 0.6
         return wave
     }()
+    
+    lazy var thirdWare: SYWaveView = {
+        let wave = SYWaveView(frame: CGRect(x: 0, y: 140, width: self.frame.width, height: 130))
+        wave.alpha = 0.6
+        return wave
+    }()
+    lazy var fouthWaves: SYWaveView = {
+        let wave = SYWaveView(frame: CGRect(x: 0, y: 140, width: self.frame.width, height:130))
+        wave.waveA = 13
+        wave.waveSpeed = 0.06
+        wave.alpha = 0.6
+        return wave
+    }()
+    
     lazy var headImg: UIImageView = {
         let head = UIImageView(frame: .zero)
         head.layer.cornerRadius = 25

@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		6F19FF03241C8DA60076058D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F19FF02241C8DA60076058D /* AppDelegate.swift */; };
-		6F19FF05241C8DA60076058D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F19FF04241C8DA60076058D /* SceneDelegate.swift */; };
 		6F19FF07241C8DA60076058D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F19FF06241C8DA60076058D /* ViewController.swift */; };
 		6F19FF0A241C8DA60076058D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F19FF08241C8DA60076058D /* Main.storyboard */; };
 		6F19FF0C241C8DAC0076058D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F19FF0B241C8DAC0076058D /* Assets.xcassets */; };
 		6F19FF0F241C8DAC0076058D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F19FF0D241C8DAC0076058D /* LaunchScreen.storyboard */; };
 		6F19FF1A241C8DAC0076058D /* SYWaveViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F19FF19241C8DAC0076058D /* SYWaveViewDemoTests.swift */; };
 		6F19FF25241C8DAC0076058D /* SYWaveViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F19FF24241C8DAC0076058D /* SYWaveViewDemoUITests.swift */; };
+		6F19FF34241C8DDD0076058D /* SYHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F19FF32241C8DDC0076058D /* SYHeadView.swift */; };
+		6F19FF35241C8DDD0076058D /* SYWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F19FF33241C8DDC0076058D /* SYWaveView.swift */; };
+		6F40D67D241E67AF00AEE3E6 /* UIColor+valueRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F40D67C241E67AF00AEE3E6 /* UIColor+valueRGB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		6F19FEFF241C8DA60076058D /* SYWaveViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYWaveViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F19FF02241C8DA60076058D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6F19FF04241C8DA60076058D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6F19FF06241C8DA60076058D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6F19FF09241C8DA60076058D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F19FF0B241C8DAC0076058D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		6F19FF20241C8DAC0076058D /* SYWaveViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYWaveViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F19FF24241C8DAC0076058D /* SYWaveViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SYWaveViewDemoUITests.swift; sourceTree = "<group>"; };
 		6F19FF26241C8DAC0076058D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F19FF32241C8DDC0076058D /* SYHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYHeadView.swift; sourceTree = "<group>"; };
+		6F19FF33241C8DDC0076058D /* SYWaveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYWaveView.swift; sourceTree = "<group>"; };
+		6F40D67C241E67AF00AEE3E6 /* UIColor+valueRGB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+valueRGB.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		6F19FF01241C8DA60076058D /* SYWaveViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6F40D67C241E67AF00AEE3E6 /* UIColor+valueRGB.swift */,
 				6F19FF02241C8DA60076058D /* AppDelegate.swift */,
-				6F19FF04241C8DA60076058D /* SceneDelegate.swift */,
 				6F19FF06241C8DA60076058D /* ViewController.swift */,
+				6F19FF32241C8DDC0076058D /* SYHeadView.swift */,
+				6F19FF33241C8DDC0076058D /* SYWaveView.swift */,
 				6F19FF08241C8DA60076058D /* Main.storyboard */,
 				6F19FF0B241C8DAC0076058D /* Assets.xcassets */,
 				6F19FF0D241C8DAC0076058D /* LaunchScreen.storyboard */,
@@ -259,9 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F40D67D241E67AF00AEE3E6 /* UIColor+valueRGB.swift in Sources */,
 				6F19FF07241C8DA60076058D /* ViewController.swift in Sources */,
 				6F19FF03241C8DA60076058D /* AppDelegate.swift in Sources */,
-				6F19FF05241C8DA60076058D /* SceneDelegate.swift in Sources */,
+				6F19FF34241C8DDD0076058D /* SYHeadView.swift in Sources */,
+				6F19FF35241C8DDD0076058D /* SYWaveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CCUAC3W53G;
 				INFOPLIST_FILE = SYWaveViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,7 +453,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.waveView.SYWaveViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,6 +464,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CCUAC3W53G;
 				INFOPLIST_FILE = SYWaveViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.waveView.SYWaveViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
