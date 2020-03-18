@@ -55,17 +55,4 @@ class SYHeadView: UIView {
         return wave
     }()
     
-    lazy var headImg: UIImageView = {
-        let head = UIImageView(frame: .zero)
-        head.layer.cornerRadius = 25
-        head.layer.masksToBounds = true
-        head.backgroundColor = .cyan
-        return head
-    }()
-    lazy var titleLab: UILabel = {
-        let lab = UILabel(frame: .zero)
-        lab.textColor = .white
-        lab.font = .systemFont(ofSize: 14)
-        return lab
-    }()
 }

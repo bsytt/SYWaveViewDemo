@@ -99,7 +99,7 @@ class SYWaveView: UIView {
         //设置波浪宽度
         wavesWidth = self.frame.width
         //波浪纵向位置
-        currentK = self.frame.height-12
+        currentK = self.frame.height-waveA
         if wavesLayer == nil {
             wavesLayer = CAShapeLayer()
             //设置闭环的颜色
